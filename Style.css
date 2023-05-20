@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Bitter', serif;
   }
-  
+  body {
+    margin: 0;
+    padding: 0;
+  }
   html, body {
     height: 100%;
   }
@@ -139,6 +142,17 @@
         width: 100%;
     }
 
+    .Icon-menu{
+        height: 60px;
+        margin:10px;
+        border-radius: 100px;
+    }
+    .Icon-menu img{
+        height: 100%;
+        width: 100%;
+
+    }
+
     /*titulos*/
     .Title,
     .sub-title {
@@ -148,63 +162,465 @@
     .columns {
         columns: 2;
     }
+    .cuentanos {
+        width: 500px;
+        height: 100px;
+      }
+      
+      .cuentanos textarea {
+        width: 500px;
+        height: 100px;
+        border: 1px solid #4169E1;
+        border-radius: 20px;
+        padding: 20px;
+        resize: vertical;
+
+      }  
+
+      .menu-inferior {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #B2DF8A;
+        height: 80px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+      body {
+        margin: 0;
+      }
+    
+      .encabezado {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+      }
+      .encabezado .logo{
+        width: 80px;
+        height: 80px;
+      }
+      .encabezado .logo img{
+        width:100% ;
+        height: 100%;
+      }
+      .menu-desplegable {
+        display: none;
+        position: absolute;
+        background-color: #f2f2f2;
+        padding: 10px;
+        list-style-type: none;
+        margin: 0;
+      }
+      
+      .menu-desplegable li {
+        margin-bottom: 10px;
+      }
+      
+      .menu-desplegable li a {
+        text-decoration: none;
+        color: #333;
+      }
+      
+      .Icon-menu {
+        position: relative;
+      }
+      
+      #menu-toggle {
+        cursor: pointer;
+      }
+      .ofertas {
+        background-color: #87CEEB;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        height: 150px;
+        width: 100%;
+        margin: 5%;
+        padding: 20px;
+        display: flex;
+        overflow: auto; /* Añadido */
+      }
+      .contenedor {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .ofertas {
+        background-color: #87CEEB;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        height: 150px;
+        width: 100%;
+        margin: 5%;
+        padding: 20px;
+        overflow: auto;
+      }
+      
+      .opciones {
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        height: 150px;
+        width: 100%;
+        margin: 5%;
+        padding: 20px;
+        display: flex;
+        overflow: auto;
+      }
+      
+      .articulo {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        height: 100px;
+        width: 300px;
+        margin: 5px;
+        display: flex;
+      }
+      
+      .articulo img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+      }
+      
+      .articulo .informacion {
+        flex: 1;
+        padding: 10px;
+      }
+      .contenedor-2 {
+        display: flex;
+        align-items: flex-start;
+      }
+      
+      .foto {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+      
+      .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .contenido {
+        margin-left: 10px;
+      }
+      
+      h3 {
+        margin: 0;
+      }
+      
+      .insignias {
+        display: flex;
+        align-items: center;
+      }
+      
+      .insignia {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-left: 10px;
+      }
+      
+      .insignia img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .informacion-adicional {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+      }
+      
+      .tipo-ave {
+        flex: 1;
+        margin-right: 10px;
+        text-align: left;
+      }
+      
+      .tipo-ave h4 {
+        margin: 0;
+        font-size: 18px;
+      }
+      
+      .tipo-ave ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      
+      .tipo-ave li {
+        margin-bottom: 5px;
+      }
+      
+      .experiencia {
+        flex: 1;
+        margin-left: 10px;
+        text-align: right;
+      }
+      
+      .circulo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .resumen-experiencia {
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      .resumen-experiencia h4 {
+        margin: 0;
+        font-size: 18px;
+      }
+      
+      .resumen-experiencia p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      
 
 
-.custom-button {
-  position: relative;
-  display: inline-block;
-  float: right;
-}
-
-.custom-button img {
-  width: 32px; /* Ajusta el ancho de la imagen según tus necesidades */
-  height: auto; /* Ajusta la altura de la imagen según tus necesidades */
-}
-
-
-input[type="date"]{
-  position: relative;
-  width: 300px;
-  height: 60px;
-  padding: 20px;
-  border: 0;
-  background: linear-gradient(45deg, #B2DF8A, #f6d860);
-  border-radius: 10px;
-  outline: none;
-  font-size: 22px;
-  font-weight: 400;
-letter-spacing: 3px;
-color: #fff;
-text-transform: uppercase;
-box-shadow: 0 4px 20px rgba(3, 44, 41, 0.226);
-}
 
 
 
 
-input[type="number"] {
-  border-radius: 40px;
-  padding: 10px;
-  background-color: skyblue;
-  border: none;
-  outline: none;
-  color: white;
-}
 
-.columns {
-  columns: 2;
-}
-.cuentanos {
-  width: 500px;
-  height: 100px;
-}
 
-.cuentanos textarea {
-  width: 500px;
-  height: 100px;
-  border: 1px solid #4169E1;
-  border-radius: 20px;
-  padding: 20px;
-  resize: vertical;
-
-}  
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Bitter', serif;
+      }
+      
+      html, body {
+        height: 100%;
+      }
+      
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      
+      
+      
+      /*presentacion*/
+      .Present img{
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+      }
+      .Present h1, .Present h2 {
+        display: flex;
+        align-items: center; /* Centrado vertical */
+        justify-content: center; /* Centrado horizontal */
+        
+      }
+      
+      .Present {
+        display: flex;
+        align-items: center; /* Centrado vertical */
+        justify-content: center; /* Centrado horizontal */
+        height: 100vh; text-align: center;
+      }
+      
+      
+      .container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+      }
+      /*imagenes*/
+      .Icon-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+      }
+      
+      .Icon-1 img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      
+      .btn-categoria {
+        height: 70px;
+        width: 200px;
+        border-radius: 1000px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 5px 10px; 
+        margin: 20px;
+      }
+      .btn-categoria:hover{
+        background-color: #87CEEB;
+      }
+      .btn-categoria:active{
+        background-color: #4169E1
+      
+      
+      }
+      input[type="checkbox"] {
+        display: none;
+      }
+      .Icon-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        padding: 2px;
+      }
+      
+      .Icon-2 img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: 3%;
+      }
+      
+      
+        /*botones*/
+        .btn-inicio {
+            padding: 5px;
+            background-color: #B2DF8A;
+            border: none;
+            border-radius: 20px;
+            margin: 5%;
+            padding: 3%;
+        }
+      
+        .btn-inicio:hover {
+            background-color: #87CEEB
+        }
+      
+        .btn-inicio2 {
+            background-color: none;
+            border: none;
+            text-decoration: underline;
+        }
+      
+        .next {
+            position: fixed;
+            bottom: 80px;
+            right: 80px;
+            padding: 5px;
+            align-items: center;
+            display: block;
+            height: 80px;
+            width: 80px;
+        }
+      
+        .next img {
+            height: 100%;
+            width: 100%;
+        }
+      
+        /*titulos*/
+        .Title,
+        .sub-title {
+            text-align: center;
+        }
+      
+        .columns {
+            columns: 2;
+        }
+      
+      
+      .custom-button {
+      position: relative;
+      display: inline-block;
+      float: right;
+      }
+      
+      .custom-button img {
+      width: 32px; /* Ajusta el ancho de la imagen según tus necesidades */
+      height: auto; /* Ajusta la altura de la imagen según tus necesidades */
+      }
+      
+      
+      input[type="date"]{
+      position: relative;
+      width: 300px;
+      height: 60px;
+      padding: 20px;
+      border: 0;
+      background: linear-gradient(45deg, #B2DF8A, #f6d860);
+      border-radius: 10px;
+      outline: none;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      color: #fff;
+      text-transform: uppercase;
+      box-shadow: 0 4px 20px rgba(3, 44, 41, 0.226);
+      }
+      
+      
+      
+      
+      input[type="number"] {
+      border-radius: 40px;
+      padding: 10px;
+      background-color: skyblue;
+      border: none;
+      outline: none;
+      color: white;
+      }
+      
+      .columns {
+      columns: 2;
+      }
+      .cuentanos {
+      width: 500px;
+      height: 100px;
+      }
+      
+      .cuentanos textarea {
+      width: 500px;
+      height: 100px;
+      border: 1px solid #4169E1;
+      border-radius: 20px;
+      padding: 20px;
+      resize: vertical;
+      
+      }  
