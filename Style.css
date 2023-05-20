@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+
+
+/*presentacion*/
+.Present img{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+.Present h1, .Present h2 {
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    
+  }
+  
+.Present {
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    height: 100vh; text-align: center;
+  }
+  
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+/*imagenes*/
+.Icon-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+  }
+
+  .Icon-1 img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .btn-categoria {
+    height: 70px;
+    width: 200px;
+    border-radius: 1000px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px; 
+    margin: 20px;
+  }
+  .btn-categoria:hover{
+    background-color: #87CEEB;
+  }
+  .btn-categoria:active{
+    background-color: #4169E1
+
+
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  .Icon-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+  }
+  
+  .Icon-2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 3%;
+  }
+  
+  
+    /*botones*/
+    .btn-inicio {
+        padding: 5px;
+        background-color: #B2DF8A;
+        border: none;
+        border-radius: 20px;
+        margin: 5%;
+        padding: 3%;
+    }
+
+    .btn-inicio:hover {
+        background-color: #87CEEB
+    }
+
+    .btn-inicio2 {
+        background-color: none;
+        border: none;
+        text-decoration: underline;
+    }
+
+    .next {
+        position: fixed;
+        bottom: 80px;
+        right: 80px;
+        padding: 5px;
+        align-items: center;
+        display: block;
+        height: 80px;
+        width: 80px;
+    }
+
+    .next img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*titulos*/
+    .Title,
+    .sub-title {
+        text-align: center;
+    }
+
+    .columns {
+        columns: 2;
+    }
+
+
+.custom-button {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.custom-button img {
+  width: 32px; /* Ajusta el ancho de la imagen según tus necesidades */
+  height: auto; /* Ajusta la altura de la imagen según tus necesidades */
+}
+
+
+input[type="date"]{
+  position: relative;
+  width: 300px;
+  height: 60px;
+  padding: 20px;
+  border: 0;
+  background: linear-gradient(45deg, #B2DF8A, #f6d860);
+  border-radius: 10px;
+  outline: none;
+  font-size: 22px;
+  font-weight: 400;
+letter-spacing: 3px;
+color: #fff;
+text-transform: uppercase;
+box-shadow: 0 4px 20px rgba(3, 44, 41, 0.226);
+}
+
+
+
+
+input[type="number"] {
+  border-radius: 40px;
+  padding: 10px;
+  background-color: skyblue;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.columns {
+  columns: 2;
+}
+.cuentanos {
+  width: 500px;
+  height: 100px;
+}
+
+.cuentanos textarea {
+  width: 500px;
+  height: 100px;
+  border: 1px solid #4169E1;
+  border-radius: 20px;
+  padding: 20px;
+  resize: vertical;
+
+}  

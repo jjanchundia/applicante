@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/png" href="./imagenes/Recurso 3pagina.png">
+
+    <title>Applicante</title>
+</head>
+<body>
+    <div class=".Present">
+    <br><br>
+        <h1 class="Title">Completemos tu perfil</h1>
+        <br>
+        <h2 class="sub-title"> Si lo deseas, puedes
+            añadir una foto </h2>
+            <br>
+            <form>
+                <label for="upload">Subir foto:</label>
+                <input type="file" id="upload" accept="image/*" onchange="previewImage(event)">
+                <button type="submit">Subir</button>
+              </form>
+              
+              <div id="imagePreview" style="width: 150px; height: 150px; border-radius: 100%; overflow: hidden;"></div>
+              
+              <script>
+                function previewImage(event) {
+                  var reader = new FileReader();
+                  reader.onload = function() {
+                    var preview = document.getElementById('imagePreview');
+                    var image = document.createElement('img');
+                    image.onload = function() {
+                      if (image.width > image.height) {
+                        image.style.maxWidth = '100%';
+                        image.style.height = 'auto';
+                      } else {
+                        image.style.maxHeight = '100%';
+                        image.style.width = 'auto';
+                      }
+                    };
+                    image.src = reader.result;
+                    preview.innerHTML = '';
+                    preview.appendChild(image);
+                  }
+                  reader.readAsDataURL(event.target.files[0]);
+                }
+              </script>
+<div class="next">
+  <a href="Intereses-usuario.html">
+  <button class="custom-button">
+  <img src="./imagenes/derecha.png">
+</button>
+</a>
+</div>               
+
+</body>
+</html>
